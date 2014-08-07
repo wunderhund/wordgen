@@ -1,0 +1,8 @@
+PREFIXES
+cue,que,gra,bue,es,de,ha,am,en,po,pa,ve,qui,gu,ca,co,do,da,pe,se,mu,nu,cua,chi,en,si,to,fe,mi,gra,de,uste,ba,sa,de,ma,du,ena,ta,si,ve,sie,le,co,ta,pai,tri,cre,be
+SUFFIXES
+qu,va,a,lu,lo,ala,sa,so,si,su,ro,cia,tar,cer,vor,ber,ner,ra,mar,nir,tes,cho,si,ber,mo,no,tar,do,ten,nca,nsa,tre,var,pre,bre,bie,mer,ste,char,jer,trar,ndo,mpre
+VOWELS
+a,e,i,o,u,au,ai,ay,eu,ei,ey,ia,ie,io,iu,oi,oy,ua,ue,ui,uo
+CONSONANTS
+c,s,v,p,l,r,h,m,ll,rr
