@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 #----------------
-#Name: code_words
-#Version: 1.2.1
+#Name: wordgen
+#Version: 0.0.1
 #Date: 2014-03-30
 #----------------
-#About the codex.txt file...
+#About the reference file...
 #The expected format of the file is as follows:
 #CATEGORY(1)
 #ITEM(1),ITEM(2),...,ITEM(N)
@@ -35,14 +35,14 @@ parser.add_argument("-n", nargs='?', type=int, default=1, help="Number of phrase
 args = parser.parse_args()
 
 if args.h :
-    print('Introduction to words v0.0.1:')
-    print('  The words.py program is a word generator which allows you to randomly')
+    print('Introduction to wordgen v0.0.1:')
+    print('  The wordgen.py program is a word generator which allows you to randomly')
     print('  generate a sequence of words built with components from a reference file.  Feel free')
     print('  to customize your own word source files by creating your own reference file.')
     print('  The categories can be re-used as many times in the generation process, in any')
     print('  order, as you see fit.  The default reference file (spanish.txt) is used if the')
     print('  -f flag is omitted.')
-    print('\nSYNTAX\n  python3 words.py [-h] [-f [filename]] [-lc | -lv] [-g # [# ...]]')
+    print('\nSYNTAX\n  python3 wordgen.py [-h] [-f [filename]] [-lc | -lv] [-g # [# ...]]')
     print('\nARGUMENTS')
     print('  -h Displays this help page.')
     print('  -s <seed string> Utilize a user-defined seed for the random number generator.')
@@ -51,17 +51,17 @@ if args.h :
     print('  -lv Verbosely list word categories from the reference file.')
     print('  -g {c1 c2 ... cN} Generates a code word via the listed category indices.')
     print('  -n {n} Specifies the number of words to create.')
-    print('\nEXAMPLES\n  python3 words.py -g 0 7 2 8 ... cN')
+    print('\nEXAMPLES\n  python3 wordgen.py -g 0 1 2 ... cN')
     print('    Outputs a single word built with the components \"w1 w2 w3 w4 ... wM\":')
     print('      Where w1 is chosen from category 0, w2 from category 7 ... to wM from')
     print('      category cN referenced from the default reference file (spanish.txt)')
-    print('\n  python3 words.py -f foo.txt -lc')
+    print('\n  python3 wordgen.py -f foo.txt -lc')
     print('    Lists the categories contained in foo.txt.')
-    print('\n  python3 words.py -f foo.txt -g 3 2 5')
+    print('\n  python3 wordgen.py -f foo.txt -g 0 2 1')
     print('    Outputs a single word \"w1 w2 w3\":')
     print('      Where w1 is chosen from category 3, w2 from category 2 and w3 from')
     print('      category 5 referenced from the file foo.txt.')
-    print('\n  python3 words.py -f foo.txt -g 3 2 5 -n 30')
+    print('\n  python3 wordgen.py -f foo.txt -g 0 2 1 -n 30')
     print('    Outputs a sequence of 30 words \"w1 w2 w3\":')
     print('      Where w1 is chosen from category 3, w2 from category 2 and w3 from')
     print('      category 5 referenced from the file foo.txt')
